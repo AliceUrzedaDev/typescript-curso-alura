@@ -2,10 +2,10 @@
 
 export class MensagemView {
 
-    private element: HTMLElement;
+    private elemento: HTMLElement;
 
     constructor(seletor: string) {
-        this.element = document.querySelector(seletor);
+        this.elemento = document.querySelector(seletor);
     }
 
     template(model: string): string {
@@ -16,6 +16,6 @@ export class MensagemView {
 
     update(model:string): void {
         const template = this.template(model);
-        this.element.innerHTML = template;
+        this.elemento.innerHTML = template;
     }
 }
